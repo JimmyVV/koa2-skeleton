@@ -5,7 +5,7 @@ const Koa = require('koa'),
     bodyParser = require('koa-bodyparser');
 const app = new Koa()
 
-app.use(views(`${__dirname}/views`, { extension: 'jade' }));
+app.use(views(`${__dirname}/views`, { extension: 'html' }));
 app.use(serve(`${__dirname}/public`));
 app.use(bodyParser());
 app.use(rootRoutes.routes());
@@ -15,4 +15,4 @@ app.listen(3000, () => {
   console.log('Server running at http://localhost:3000')
 })
 
-modules.exports =  app;
+module.exports =  app;
