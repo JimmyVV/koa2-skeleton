@@ -1,22 +1,19 @@
-# Koa v2 Skeleton
-> A simple boilerplate for creating a web-app with Koa 2.
+# Koa2 骨架
 
-### Install
-You can download this app by doing one of the following: 
+这是一个使用 Koa2 搭建的简单骨架,这基于的是 MVC 的架构。
 
-1. Use the <kbd>Download Zip</kbd> button at the top right.
-2. Run `$ git clone git@github.com:saadq/koa2-skeleton.git` in the command line.
+## 运行
 
-Once you've downloaded the app, run `npm install` to get the necessary dependencies for the project.
+Koa2 依赖的是 v7.6.0 版本的 node。首先,可以使用 nvm 下载最新版的 node。
 
-### Starting the server
-Once you have all your dependencies installed, you can run `npm start` to start the server and then you can head over to [localhost:3000](http://localhost:3000)
+```
+nvm install v7.6.0
+```
 
-### Usage
-If you want to change the templating engine, simply remove `jade` from the dependencies and change the extension from `'jade'` to whatever you want to use in the `app.js` file.
+之后在当前目录使用:
 
-### Contributing
-Pull requests are very welcome! Please feel free to add to this if you feel like anything is missing out.
+```
+node app.js
+```
 
-### License
-MIT
+此时控制台会提示,当前已经打开 3000 端口。
